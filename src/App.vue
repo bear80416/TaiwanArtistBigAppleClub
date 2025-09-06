@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg bg-black navbar-dark sticky-top">
       <div class="container">
         <router-link class="navbar-brand" to="/">
-          <img src="./assets/logo.png" width="250" alt="Taiwna Artist Big Apple Club | 搞藝術的台灣浪子大蘋果俱樂部">
+          <h1><img src="./assets/logo.png" width="250" alt="Taiwna Artist Big Apple Club | 搞藝術的台灣浪子大蘋果俱樂部"></h1> 
         </router-link>
         <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,10 +26,10 @@
 
   <header class="hero-section text-center">
     <div class="hero-content">
-      <h1 class="display-3 fw-bold">你的故事，從這裡開始</h1>
-      <!-- <p class="lead my-2">*紐約的台灣藝術家們 限定</p>
-      <p class="lead my-4">每個月舉辦聚會，讓我們可以講中文、聽中文歌、認識新的台灣藝術家朋友、一起交流的俱樂部</p> -->
-      <a href="#contact" class="btn btn-info btn-lg">立即訂閱消息</a>
+      <h1 class="display-3 fw-bold ">你的故事，從這開始</h1> 
+      <p class="lead my-2">*紐約的台灣藝術家們 限定</p>
+      <!-- <p class="lead my-4">每個月舉辦聚會，讓我們可以講中文、聽中文歌、認識新的台灣藝術家朋友、一起交流的俱樂部</p>  -->
+       <a href="#contact" class="btn btn-light btn-lg opacity-75">立即訂閱消息</a> 
     </div>
   </header>
 
@@ -61,11 +61,12 @@ document.querySelectorAll('[data-bs-toggle="collapse"]')
 
 
 .hero-section {
-  background: url('./assets/background.png') no-repeat center top;
-  background-size: cover;
+  background: url('./assets/background.png') repeat center top;
+  background-size: auto;
   color: white;
-  padding: 10rem 0;
+  padding: 12rem 0;
   position: relative;
+  opacity: 201;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
