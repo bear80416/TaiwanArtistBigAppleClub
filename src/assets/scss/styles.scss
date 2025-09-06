@@ -1,2 +1,16 @@
 // Import all of Bootstrap’s CSS
 @import "bootstrap/scss/bootstrap";
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+  }      
+  
+  :root {
+    /* 主要背景色 */
+    --bs-body-bg: #000000; 
+    /* 主要文字顏色 */
+    --bs-body-color: #f8f9fa; 
+    /* 主色 */
+    --bs-primary: #0d6efd;
+    --bs-tertiary-bg-rgb: #000000; 
+  }

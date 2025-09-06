@@ -6,8 +6,6 @@ import HomeView from './components/HomeView.vue'
 // Import our custom CSS
 import './assets/scss/styles.scss'
 
-// Import all of Bootstrap’s JS
-import * as bootstrap from 'bootstrap'
 
 const routes = [
    { path: '/', component: HomeView },

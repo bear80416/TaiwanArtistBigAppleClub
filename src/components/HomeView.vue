@@ -2,29 +2,29 @@
     <section id="features" class="container py-5">
             <h2 class="text-center mb-5 fw-bold">我們的特色</h2>
             <div class="row text-center">
-                <div class="col-md-4 mb-4">
+                <div class="col-lg-4 mb-4">
                     <div class="card card-custom p-4">
                         <div class="card-body">
                             <i class="bi bi-gear-fill feature-icon"></i> <h5 class="card-title fw-bold mt-3">交流</h5>
-                            <p class="card-text">提供客製化的解決方案，滿足您的所有需求。</p>
+                            <p class="card-text">提Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sequi doloribus tempora soluta suscipit quisquam exercitationem, saepe eius illum, beatae itaque, veniam enim architecto repudiandae cumque placeat recusandae aut ipsa.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-lg-4 mb-4">
                     <div class="card card-custom p-4">
                         <div class="card-body">
                             <i class="bi bi-lightning-fill feature-icon"></i>
                             <h5 class="card-title fw-bold mt-3">文化</h5>
-                            <p class="card-text">優化效能，讓您的用戶享受流暢無比的操作。</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab commodi quae voluptatem voluptate blanditiis tenetur vero fuga dolorem culpa! Illum porro similique temporibus, ducimus ipsam iusto esse fuga debitis! Tempora!</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-lg-4 mb-4">
                     <div class="card card-custom p-4">
                         <div class="card-body">
                             <i class="bi bi-shield-fill-check feature-icon"></i>
                             <h5 class="card-title fw-bold mt-3">安全可靠</h5>
-                            <p class="card-text">採用業界最高標準，確保您的資料安全無虞。</p>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores doloremque ducimus dolorum veritatis error minima, adipisci ex corrupti amet porro odio voluptas nesciunt totam ipsa aspernatur sed numquam iure nihil!。</p>
                         </div>
                     </div>
                 </div>
@@ -35,12 +35,12 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6 mb-4 mb-md-0">
-                        <img src="https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=2940&auto=format&fit=crop" class="img-fluid rounded-3" alt="關於我們">
+                        <img src="./../assets/section01.png" class="img-fluid rounded-3" alt="關於我們">
                     </div>
                     <div class="col-md-6">
                         <h2 class="fw-bold mb-4">我們是誰？</h2>
-                        <p class="lead">我們是一群充滿熱情的開發者，致力於為客戶提供創新且實用的數位解決方案。</p>
-                        <p>從小型專案到大型企業系統，我們都將以專業、熱情的態度，為您打造獨一無二的產品。</p>
+                        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae dolor velit hic, optio assumenda blanditiis distinctio delectus id similique dignissimos eius, adipisci laborum corporis ratione iste dicta facilis quisquam ipsum culpa nulla impedit quo tempore quia. Nisi veritatis a provident deleniti corrupti voluptas ipsam eum fuga, quo eos! Eligendi, autem.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit id esse odit eaque veniam quisquam optio, et asperiores nihil vitae.</p>
                         <button type="button" class="btn btn-outline-light mt-3">了解更多</button>
                     </div>
                 </div>
@@ -83,15 +83,17 @@
 // 表單驗證的 JavaScript
 (function () {
     'use strict'
-    const forms = document.querySelectorAll('.needs-validation') as NodeListOf<HTMLFormElement>
+    const forms = document.querySelectorAll('.needs-validation') 
     Array.from(forms)
         .forEach(function (form) {
             form.addEventListener('submit', function (event) {
-                if (!form.checkValidity()) {
+                const htmlForm = form instanceof HTMLFormElement ? form : null;
+                if (!htmlForm) return;
+                if (!htmlForm.checkValidity()) {
                     event.preventDefault()
                     event.stopPropagation()
                 }
-                form.classList.add('was-validated')
+                htmlForm.classList.add('was-validated')
             }, false)
         })
 })()
@@ -104,6 +106,7 @@ section {
 .card-custom {
     border: none;
     border-radius: 1rem;
+    background-color: #212529;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
