@@ -1,16 +1,23 @@
 // Import all of Bootstrap’s CSS
 @import "bootstrap/scss/bootstrap";
-
+@font-face {
+  font-family: 'MyCustomFont'; 
+  src: url('/src/assets/IosevkaTermSS01-Thin.woff2') format('woff2'); 
+  font-weight: normal; 
+  font-style: normal;
+  font-display: swap; 
+}
 body {
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'MyCustomFont', sans-serif;
+    // background: url('/src/assets/background.png') no-repeat center top;
+    // background-size: cover;
+    background-color: #000000;
   }      
   
   :root {
-    /* 主要背景色 */
-    --bs-body-bg: #000000; 
     /* 主要文字顏色 */
     --bs-body-color: #f8f9fa; 
     /* 主色 */
-    --bs-primary: #0d6efd;
+    --bs-primary: #0drgb(0, 0, 0)
     --bs-tertiary-bg-rgb: #000000; 
   }

@@ -1,137 +1,76 @@
 <template>
-    <section id="features" class="container py-5">
-            <h2 class="text-center mb-5 fw-bold">我們的特色</h2>
-            <div class="row text-center">
-                <div class="col-lg-4 mb-4">
-                    <div class="card card-custom p-4">
-                        <div class="card-body">
-                            <i class="bi bi-gear-fill feature-icon"></i> <h5 class="card-title fw-bold mt-3">交流</h5>
-                            <p class="card-text">提Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sequi doloribus tempora soluta suscipit quisquam exercitationem, saepe eius illum, beatae itaque, veniam enim architecto repudiandae cumque placeat recusandae aut ipsa.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card card-custom p-4">
-                        <div class="card-body">
-                            <i class="bi bi-lightning-fill feature-icon"></i>
-                            <h5 class="card-title fw-bold mt-3">文化</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab commodi quae voluptatem voluptate blanditiis tenetur vero fuga dolorem culpa! Illum porro similique temporibus, ducimus ipsam iusto esse fuga debitis! Tempora!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card card-custom p-4">
-                        <div class="card-body">
-                            <i class="bi bi-shield-fill-check feature-icon"></i>
-                            <h5 class="card-title fw-bold mt-3">安全可靠</h5>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores doloremque ducimus dolorum veritatis error minima, adipisci ex corrupti amet porro odio voluptas nesciunt totam ipsa aspernatur sed numquam iure nihil!。</p>
-                        </div>
-                    </div>
-                </div>
+    <section class="container">
+        <h1>ALBERT HSUEH</h1>
+        <p class="text1">薛 定 洲</p>
+        <p class="text2">台灣藝術家在紐約的遊樂場 — 一個彼此連結交流、放鬆玩樂、激盪創作的俱樂部。從這裡出發，我們一起讓世界看見台灣。</p>
+        <p class="text3">A playground for Taiwanese artists — where we connect, play and create in New York City.From here, we make the world see Taiwan.</p>
+    </section>
+    <section class="container">
+        <div class="row justify-content-center g-3">
+            <div class="col-3">
+                <img src="/src/assets/background.png" class="w-100" alt="Albert Hsueh 1">
             </div>
-        </section>
-
-        <section id="about" class=" py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 mb-4 mb-md-0">
-                        <img src="./../assets/section01.png" class="img-fluid rounded-3" alt="關於我們">
-                    </div>
-                    <div class="col-md-6">
-                        <h2 class="fw-bold mb-4">我們是誰？</h2>
-                        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae dolor velit hic, optio assumenda blanditiis distinctio delectus id similique dignissimos eius, adipisci laborum corporis ratione iste dicta facilis quisquam ipsum culpa nulla impedit quo tempore quia. Nisi veritatis a provident deleniti corrupti voluptas ipsam eum fuga, quo eos! Eligendi, autem.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit id esse odit eaque veniam quisquam optio, et asperiores nihil vitae.</p>
-                        <button type="button" class="btn btn-outline-light mt-3">了解更多</button>
-                    </div>
-                </div>
+            <div class="col-3">
+                <img src="/src/assets/background.png" class="w-100" alt="Albert Hsueh 2">
             </div>
-        </section>
-
-        <section id="contact" class="py-5">
-            <div class="container">
-                <h2 class="text-center fw-bold mb-5">聯絡我們</h2>
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <form class="needs-validation" novalidate>
-                            <div class="mb-3">
-                                <label for="contactName" class="form-label">姓名</label>
-                                <input type="text" class="form-control" id="contactName" required>
-                                <div class="invalid-feedback">請輸入您的姓名。</div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="contactEmail" class="form-label">信箱</label>
-                                <input type="email" class="form-control" id="contactEmail" required>
-                                <div class="invalid-feedback">請輸入有效的電子郵件。</div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="contactMessage" class="form-label">訊息</label>
-                                <textarea class="form-control" id="contactMessage" rows="4" required></textarea>
-                                <div class="invalid-feedback">請輸入您的訊息。</div>
-                            </div>
-                            <div class="d-grid gap-2">
-                                <button class="btn btn-brand btn-lg" type="submit">送出</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+            <div class="col-3">
+                <img src="/src/assets/background.png" class="w-100" alt="Albert Hsueh 3">
             </div>
-        </section>
+            <div class="col-3">
+                <img src="/src/assets/background.png" class="w-100" alt="Albert Hsueh 4">
+            </div>
+        </div>
+    </section>
 
 </template>
 
 <script setup lang="ts">
-// 表單驗證的 JavaScript
-(function () {
-    'use strict'
-    const forms = document.querySelectorAll('.needs-validation') 
-    Array.from(forms)
-        .forEach(function (form) {
-            form.addEventListener('submit', function (event) {
-                const htmlForm = form instanceof HTMLFormElement ? form : null;
-                if (!htmlForm) return;
-                if (!htmlForm.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
-                }
-                htmlForm.classList.add('was-validated')
-            }, false)
-        })
-})()
+
 </script>
 
 <style scoped>
-section {
-    color: white;
+h1{
+    font-weight: bold;
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
-.card-custom {
-    border: none;
-    border-radius: 1rem;
-    background-color: #212529;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.text1{
+    text-align: center;
+    margin-bottom: 120px;
 }
-
-.card-custom:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.text2{
+    text-align: center;
+    margin-bottom: 120px;
+    font-size: smaller;
+    padding-right: 30%;
+    padding-left: 30%;
 }
-
-.feature-icon {
-    font-size: 3rem;
-    color: #6c757d;
-    /* 灰色 */
-}
-
-.btn-brand {
-    background-color: #ff5722;
-    /* 鮮豔的橙色 */
-    border-color: #ff5722;
-    color: white;
-    transition: background-color 0.3s ease;
+.text3{
+    text-align: center;
+    margin-bottom: 120px;
+    font-size: smaller;
+    padding-right: 30%;
+    padding-left: 30%;
 }
 
-.btn-brand:hover {
-    background-color: #e64a19;
-    border-color: #e64a19;
-}
+
+  @media (max-width: 768px) {
+    h1{
+        font-size: 3.4rem;
+    }
+    .text1{
+       font-size: smaller;
+    }
+    .text2{
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    .text3{
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+  }
 </style>
