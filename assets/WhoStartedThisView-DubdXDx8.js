@@ -1,0 +1,1 @@
+import{_ as t,c as o,o as a,a as e}from"./index-DLUKEe1Z.js";const c={},r={class:"container"};function n(_,s){return a(),o("section",r,[...s[0]||(s[0]=[e("div",{class:"row"},[e("div",{class:"mt-2 p-3"},[e("h2",null,"創辦人介紹 WHO STARTED THIS"),e("hr")])],-1)])])}const i=t(c,[["render",n],["__scopeId","data-v-8e291928"]]);export{i as default};
