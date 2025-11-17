@@ -37,7 +37,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: url('https://images.unsplash.com/photo-1509631179647-0177331693ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+        background: url('../../assets/background.png') no-repeat center center/cover;
         filter: brightness(0.6) contrast(1.1); /* 降低亮度讓文字突出 */
         z-index: 1;
         transition: transform 10s ease; /* 緩慢縮放效果 */
@@ -57,6 +57,7 @@
     .hero-bottom{
         position: absolute;
         bottom: 0;
+        z-index: 2;
     }
     .brand-name {
         /*font-family: 'Playfair Display', serif;*/ /* 時尚襯線體 */
