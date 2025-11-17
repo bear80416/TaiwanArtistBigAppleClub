@@ -1,23 +1,90 @@
 // Import all of Bootstrap’s CSS
 @import "bootstrap/scss/bootstrap";
 @font-face {
-  font-family: 'MyCustomFont'; 
-  src: url('/src/assets/IosevkaTermSS01-Thin.woff2') format('woff2'); 
-  font-weight: normal; 
-  font-style: normal;
-  font-display: swap; 
+    font-family: 'MyCustomFont';
+    src: url('/src/assets/IosevkaTermSS01-Thin.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
+/* --- 0. 基礎設定 --- */
+:root {
+    --bg-color: #0a0a0a; /* 極深灰，比純黑更有質感 */
+    --text-color: #ffffff;
+    --accent-color: #d4af37; /* 香檳金點綴 */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'MyCustomFont', sans-serif;
-    // background: url('/src/assets/background.png') no-repeat center top;
-    // background-size: cover;
-    background-color: #000000;
-  }      
-  
-  :root {
-    /* 主要文字顏色 */
-    --bs-body-color: #f8f9fa; 
-    /* 主色 */
-    --bs-primary: #0drgb(0, 0, 0)
-    --bs-tertiary-bg-rgb: #000000; 
-  }
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'MyCustomFont', sans-serif; /* 內文使用現代字體 */
+    overflow-x: hidden; /* 防止水平卷軸 */
+}
+
+/* 按鈕 */
+.btn-fashion {
+    display: inline-block;
+    padding: 15px 40px;
+    border: 1px solid rgba(255,255,255,0.5);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards 1.1s;
+}
+
+    .btn-fashion::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: white;
+        transition: left 0.4s ease;
+        z-index: -1;
+    }
+
+    .btn-fashion:hover {
+        color: black;
+        border-color: white;
+    }
+
+        .btn-fashion:hover::before {
+            left: 0; /* 填滿白色 */
+        }
+
+/* --- 動畫定義 --- */
+@keyframes fadeUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
