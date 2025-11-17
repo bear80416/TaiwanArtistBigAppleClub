@@ -6,9 +6,8 @@
 	<header>
       <div class="container-fluid">
         <div class="row justify-content-around align-items-center py-3">
-          <RouterLink class="col text-start text-light text-decoration-none" to="/whatWeDo">WHAT WE DO</RouterLink>
           <RouterLink class="col text-center" to="/"><img src="../../assets/logo.png" width="250" alt="Taiwna Artist Big Apple Club | 搞藝術的台灣浪子大蘋果俱樂部"></RouterLink>
-          <RouterLink class="col text-end text-light text-decoration-none" to="/whoAreWe">WHO ARE WE</RouterLink>
+
         </div>
       </div>
     </header>
