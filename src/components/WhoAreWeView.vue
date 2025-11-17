@@ -4,8 +4,9 @@
 <template>
 	<section class="container">
 		<div class="row">
-			<div class="mt-2">
+			<div class="mt-2 p-3">
 				<h2>關於我們 WHO ARE WE</h2>
+				<hr>
 				<p>
 					我是薛定洲，一名在紐約生活十年的台灣音樂劇演員。
 				</p>

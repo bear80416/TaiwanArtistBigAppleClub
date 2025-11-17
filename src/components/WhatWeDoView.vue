@@ -6,6 +6,7 @@
         <div class="row">
             <div class="mt-2 p-3">
                 <h2>俱樂部在幹嘛 WHAT WE DO</h2>
+                <hr>
                 <p>
                     在這裡，我們講中文、聽中文歌、品嘗台灣的味道，讓每個人都能在最自在的氛圍裡認識、交流與分享。
                 </p>
@@ -27,7 +28,6 @@
 
 
 <style scoped>
-
     p{
         font-size: 0.8rem;
     }

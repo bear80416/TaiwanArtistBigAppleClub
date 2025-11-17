@@ -4,8 +4,8 @@
                 <img src="../assets/section01.png" alt="Fashion Model" class="editorial-img">
             </div>
             <div class="editorial-text">
-                <h2>WHERE WE <br>DO.</h2>
-                <p>在這裡，我們講中文、聽中文歌、品嘗台灣的味道，讓每個人都能在最自在的氛圍裡認識、交流與分享。</p>
+                <h2>WHERE WE <br>DO</h2>
+                <p>在這裡，我們講中文、聽中文歌、品嘗台灣的味道，讓每個人都能在最自在的氛圍裡認識、交流與分享...</p>
                 <RouterLink to="/whatWeDo" class="btn-fashion" style="margin-top: 0;">Read The Story</RouterLink>
             </div>
         </section>
@@ -57,7 +57,7 @@
     }
 
     .editorial-text h2 {
-        font-family: 'Playfair Display', serif;
+        font-family: 'Playfair Display', 'Didot', 'Bodoni MT', 'Times New Roman', serif;
         font-size: 3.5rem;
         line-height: 1.1;
         margin-bottom: 30px;
