@@ -1,4 +1,4 @@
-<script setup lang="ts">
+Ôªø<script setup lang="ts">
      import MenuView from '../layout/MenuView.vue'
 </script>
 
@@ -6,9 +6,9 @@
 	<header>
       <div class="container-fluid">
         <div class="row justify-content-around align-items-center py-3">
-          <router-link class="col text-start text-light text-decoration-none" to="/whatWeDo">WHAT WE DO</router-link>
-          <router-link class="col text-center" to="/"><img src="../../assets/logo.png" width="250" alt="Taiwna Artist Big Apple Club | ∑d√¿≥N™∫•x∆WÆˆ§l§jƒ´™G≠—º÷≥°"></router-link>
-          <router-link class="col text-end text-light text-decoration-none" to="/whoAreWe">WHO ARE WE</router-link>
+          <RouterLink class="col text-start text-light text-decoration-none" to="/whatWeDo">WHAT WE DO</RouterLink>
+          <RouterLink class="col text-center" to="/"><img src="../../assets/logo.png" width="250" alt="Taiwna Artist Big Apple Club | ÊêûËóùË°ìÁöÑÂè∞ÁÅ£Êµ™Â≠êÂ§ßËòãÊûú‰ø±Ê®ÇÈÉ®"></RouterLink>
+          <RouterLink class="col text-end text-light text-decoration-none" to="/whoAreWe">WHO ARE WE</RouterLink>
         </div>
       </div>
     </header>
@@ -16,7 +16,7 @@
 </template>
 
 <style scoped> 
-    /* --- 2. ºÈ¨y∂]∞®øO (Marquee) --- */
+    /* --- 2. ÊΩÆÊµÅË∑ëÈ¶¨Ááà (Marquee) --- */
      .marquee-container {
          background: var(--text-color);
          color: var(--bg-color);

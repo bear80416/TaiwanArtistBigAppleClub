@@ -4,7 +4,7 @@
                 <img src="../assets/section01.png" alt="Fashion Model" class="editorial-img">
             </div>
             <div class="editorial-text">
-                <h2>WHERE WE <br>DO</h2>
+                <h2>WHAT WE <br>DO</h2>
                 <p>在這裡，我們講中文、聽中文歌、品嘗台灣的味道，讓每個人都能在最自在的氛圍裡認識、交流與分享...</p>
                 <RouterLink to="/whatWeDo" class="btn-fashion" style="margin-top: 0;">Read The Story</RouterLink>
             </div>
