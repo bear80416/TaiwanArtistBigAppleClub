@@ -1,0 +1,1 @@
+import{_ as t,c as o,o as a,a as e}from"./index-D88xn2Ja.js";const c={},n={class:"container"};function r(d,s){return a(),o("section",n,[...s[0]||(s[0]=[e("div",{class:"row"},[e("div",{class:"mt-2 p-3"},[e("h2",null,"活動紀錄 WHAT WE DID"),e("hr")])],-1)])])}const i=t(c,[["render",r],["__scopeId","data-v-f69f9dfb"]]);export{i as default};

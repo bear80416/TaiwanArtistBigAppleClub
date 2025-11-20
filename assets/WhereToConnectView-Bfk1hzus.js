@@ -1,1 +1,0 @@
-import{_ as o,c,o as t,a as e}from"./index-BBtO6k8J.js";const a={},n={class:"container"};function r(_,s){return t(),c("section",n,[...s[0]||(s[0]=[e("div",{class:"row"},[e("div",{class:"mt-2 p-3"},[e("h2",null,"聯絡我們 WHERE TO CONNECT"),e("hr")])],-1)])])}const i=o(a,[["render",r],["__scopeId","data-v-119c2ea9"]]);export{i as default};
