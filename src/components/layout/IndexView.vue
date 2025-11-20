@@ -1,5 +1,5 @@
 ﻿<script setup lang="ts">
-    import MenuView from '../layout/MenuView.vue'
+    import MarqueeView from '../layout/MarqueeView.vue'
 </script>
 
 <template>
@@ -7,7 +7,7 @@
         <div class="hero-bg"></div>
         <div class="hero-content">
             <h1 class="brand-name"><img src="../../assets/logo.png" /></h1>
-            <RouterLink to="/whoAreWe" class="btn-fashion">Explore us</RouterLink>
+            <RouterLink to="whoAreWe" class="btn-fashion">Explore us</RouterLink>
 
         </div>
         <div class="hero-bottom">
@@ -15,7 +15,7 @@
             <p class="brand-slogan">A playground for Taiwanese artists - where we connect, play and create in New York City.From here, we make the world see Taiwan.</p>
         </div>
     </header>
-    <MenuView></MenuView>
+    <MarqueeView></MarqueeView>
 </template>
 
 <style scoped>

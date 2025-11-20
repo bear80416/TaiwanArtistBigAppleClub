@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import { createMemoryHistory, createRouter } from 'vue-router'
+import { createWebHistory, createRouter } from 'vue-router'
 import App from './App.vue'
 // Import our custom CSS
 import './assets/scss/styles.scss'
@@ -16,18 +16,18 @@ const whatWeDid = () => import('../src/components/WhatWeDidView.vue')
 const whereToConnect = () => import('../src/components/WhereToConnectView.vue')
 
 const routes = [
-    { path: '/', components: { default: home, layout: index } },
-    { path: '/whatWeDo', components: { default: whatWeDo, layout: main } },
-    { path: '/whoAreWe', components: { default: whoAreWe, layout: main } },
-    { path: '/events', components: { default: events, layout: main } },
-    { path: '/whoStartedThis', components: { default: whoStartedThis, layout: main } },
-    { path: '/whatWeDid', components: { default: whatWeDid, layout: main } },
-    { path: '/whereToConnect', components: { default: whereToConnect, layout: main } },
+    { path: '/', name:'', components: { default: home, layout: index } },
+    { path: '/whatWeDo', name: 'whatWeDo', components: { default: whatWeDo, layout: main } },
+    { path: '/whoAreWe', name: 'whoAreWe', components: { default: whoAreWe, layout: main } },
+    { path: '/events', name: 'events', components: { default: events, layout: main } },
+    { path: '/whoStartedThis', name: 'whoStartedThis', components: { default: whoStartedThis, layout: main } },
+    { path: '/whatWeDid', name: 'whatWeDid', components: { default: whatWeDid, layout: main } },
+    { path: '/whereToConnect', name: 'whereToConnect', components: { default: whereToConnect, layout: main } },
 ]
   
 const router = createRouter({
-    history: createMemoryHistory(),
-    routes,
+    history: createWebHistory(),
+    routes
 })
 
 const pinia = createPinia()
