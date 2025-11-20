@@ -5,6 +5,7 @@ import App from './App.vue'
 // Import our custom CSS
 import './assets/scss/styles.scss'
 
+const basePath = '/TaiwanArtistBigAppleClub/';
 const home = () => import('../src/components/HomeView.vue')
 const index = () => import('../src/components/layout/IndexView.vue')
 const main = () => import('../src/components/layout/MainView.vue')
@@ -26,7 +27,7 @@ const routes = [
 ]
   
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory(basePath),
     routes
 })
 
