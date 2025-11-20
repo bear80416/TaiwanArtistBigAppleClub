@@ -1,0 +1,1 @@
+import{_ as t,c as a,o,a as e}from"./index-CY5oUbpv.js";const c={},n={class:"container"};function r(_,s){return o(),a("section",n,[...s[0]||(s[0]=[e("div",{class:"row"},[e("div",{class:"mt-2 p-3"},[e("h2",null,"NEW EVENT 2025"),e("hr")])],-1)])])}const i=t(c,[["render",r],["__scopeId","data-v-52ad42ae"]]);export{i as default};
